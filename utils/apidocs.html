@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mb-4">API Documentation</h1>
+    <p class="lead">Welcome to our API. Here is how you can use it:</p>
+
+    <h2>Endpoints</h2>
+    <ul class="list-group mb-4">
+        <li class="list-group-item"><strong>POST /api/users</strong>: Create a new user.</li>
+    </ul>
+
+    <h3>POST /api/users</h3>
+    <p>Create a new user by sending a JSON payload with the following structure:</p>
+    <pre class="bg-light p-3">
+{
+    "username": "your_username",
+    "password": "your_password"
+}
+        </pre>
+    <p>Example:</p>
+    <pre class="bg-light p-3">
+curl -X POST http://localhost:8080/api/users -H "Content-Type: application/json" -d '{"username": "testuser", "password": "testpassword"}'
+        </pre>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
